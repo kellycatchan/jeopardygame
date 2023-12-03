@@ -17,12 +17,12 @@ function setup() {
   userInput = createInput('');
   userInput.size(500,20);
   userInput.style('font-size','20px');
-  userInput.position(width / 2 - userInput.width / 2, height + 150);
+  userInput.position(width / 2 - userInput.width / 2, height + 450);
   
   let submitButton = createButton('Submit');
   submitButton.style('font-size', '20px');
   submitButton.style('background-color', color(255,215,0));
-  submitButton.position(width / 2 - userInput.width / 2, height + 200);
+  submitButton.position(width / 2 - userInput.width / 2, height + 500);
   submitButton.mousePressed(checkAnswer);
   
   let pickCategory = createSelect();
@@ -95,7 +95,7 @@ function displayQuestion() {
   textSize(20);
   fill(0);
   textAlign(CENTER, CENTER);
-  text(`Your point total: ${points}`, width / 2, 500)
+  text(`Your point total: ${points}`, width / 2, 550)
 }
 
 
