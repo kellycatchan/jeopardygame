@@ -86,7 +86,7 @@ function draw() {
 }
 
 function displayQuestion() {
-  textSize(25);
+  textSize(15);
   fill(0);
   textAlign(CENTER, CENTER);
   
@@ -94,7 +94,7 @@ function displayQuestion() {
   text(`Points: ${currentQuestion.points}`, width / 2, 250);
   text(`Question: ${currentQuestion.answer}`, width / 2, 350);
   
-  textSize(20);
+  textSize(15);
   fill(0);
   textAlign(CENTER, CENTER);
   text(`Your point total: ${points}`, width / 2, 550)
