@@ -17,18 +17,18 @@ function setup() {
   userInput = createInput('');
   userInput.size(500,20);
   userInput.style('font-size','20px');
-  userInput.position(width / 2 - userInput.width / 2, height / 2 + 750);
+  userInput.position(width / 2 - userInput.width / 2, height + windowHeight * 1.35);
   
   let submitButton = createButton('Submit');
   submitButton.style('font-size', '20px');
   submitButton.style('background-color', color(255,215,0));
-  submitButton.position(width / 2 - userInput.width / 2, height / 2 + 800);
+  submitButton.position(width / 2 - userInput.width / 2, height + windowHeight * 1.4);
   submitButton.mousePressed(checkAnswer);
   
   let pickCategory = createSelect();
   pickCategory.size(500,40);
   pickCategory.style('font-size','20px');
-  pickCategory.position(width / 10, height / 2 + 400);
+  pickCategory.position(width / 10, height + windowHeight * 0.9);
   pickCategory.option('Select an option', '');
   pickCategory.option('Pop culture, Arts, Sports');
   pickCategory.option('Math, Science, Health');
@@ -41,7 +41,7 @@ function setup() {
   })
   
   let startButton = createButton('Start Game');
-  startButton.position(width / 10, height / 2 + 465);
+  startButton.position(width / 10, height + windowHeight * 0.95);
   startButton.style('font-size', '20px');
   startButton.mousePressed(filterQuestions);
 }
