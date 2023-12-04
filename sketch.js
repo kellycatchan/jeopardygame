@@ -29,10 +29,12 @@ function setup() {
   pickCategory.size(500,40);
   pickCategory.style('font-size','20px');
   pickCategory.position(width / 10, height / 2 + 400);
+  pickCategory.option('Select an option', '');
   pickCategory.option('Pop culture, Arts, Sports');
   pickCategory.option('Math, Science, Health');
   pickCategory.option('Language Arts, Literature, Phrases');
   pickCategory.option('History, Culture, Geography, Politics');
+  pickCategory.selected('');
   pickCategory.changed(() => {
     chosenCategory = pickCategory.value();
     console.log(chosenCategory);
