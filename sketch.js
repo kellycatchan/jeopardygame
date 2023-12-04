@@ -28,7 +28,7 @@ function setup() {
   let pickCategory = createSelect();
   pickCategory.size(500,40);
   pickCategory.style('font-size','20px');
-  pickCategory.position(width / 10, height + windowHeight * 0.9);
+  pickCategory.position(width / 10, height + windowHeight * 0.95);
   pickCategory.option('Select an option', '');
   pickCategory.option('Pop culture, Arts, Sports');
   pickCategory.option('Math, Science, Health');
@@ -41,7 +41,7 @@ function setup() {
   })
   
   let startButton = createButton('Start Game');
-  startButton.position(width / 10, height + windowHeight * 1.1);
+  startButton.position(width / 10, height + windowHeight * 1);
   startButton.style('font-size', '20px');
   startButton.mousePressed(filterQuestions);
 }
