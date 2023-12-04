@@ -17,12 +17,12 @@ function setup() {
   userInput = createInput('');
   userInput.size(500,20);
   userInput.style('font-size','20px');
-  userInput.position(width / 2 - userInput.width / 2, height + windowHeight * 1.35);
+  userInput.position(width / 2 - userInput.width / 2, height + windowHeight * 1.5);
   
   let submitButton = createButton('Submit');
   submitButton.style('font-size', '20px');
   submitButton.style('background-color', color(255,215,0));
-  submitButton.position(width / 2 - userInput.width / 2, height + windowHeight * 1.4);
+  submitButton.position(width / 2 - userInput.width / 2, height + windowHeight * 1.55);
   submitButton.mousePressed(checkAnswer);
   
   let pickCategory = createSelect();
@@ -41,7 +41,7 @@ function setup() {
   })
   
   let startButton = createButton('Start Game');
-  startButton.position(width / 10, height + windowHeight * 0.95);
+  startButton.position(width / 10, height + windowHeight * 1);
   startButton.style('font-size', '20px');
   startButton.mousePressed(filterQuestions);
 }
