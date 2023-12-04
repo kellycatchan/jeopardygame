@@ -17,12 +17,12 @@ function setup() {
   userInput = createInput('');
   userInput.size(500,20);
   userInput.style('font-size','20px');
-  userInput.position(width / 2 - userInput.width / 2, height / 2 + 600);
+  userInput.position(width / 2 - userInput.width / 2, height / 2 + 750);
   
   let submitButton = createButton('Submit');
   submitButton.style('font-size', '20px');
   submitButton.style('background-color', color(255,215,0));
-  submitButton.position(width / 2 - userInput.width / 2, height / 2 + 650);
+  submitButton.position(width / 2 - userInput.width / 2, height / 2 + 800);
   submitButton.mousePressed(checkAnswer);
   
   let pickCategory = createSelect();
