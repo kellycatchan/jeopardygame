@@ -6,6 +6,7 @@
 body {
     background-image: url('background.png');
     background-size: contain;
+    background-color: #020152;
 }
 
 .container {
