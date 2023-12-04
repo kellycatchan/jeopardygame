@@ -1,15 +1,50 @@
-h2 {
-    color: blue;
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+body {
+    background-image: url(../images/background.png);
+    background-size: contain;
+}
+
+.container {
+    width: 45%;
+    text-align: left;
+    margin:0 auto 0 auto;
+    padding-bottom: 20px;
+}
+
+.container h2 {
+    color: RGB(255,215,0);
     font-size: 5em;
+    font-family: "GrotzecCond-Demibold";
+    letter-spacing: 2px;
+    line-height: 20px;
 }
 
-h3 {
-    color: darkblue;
+.container h3 {
+    color: white;
     font-size: 3em;
+    font-family: "GrotzecCond-Demibold";
 }
 
-p {
+.container h4 {
+    color: RGB(255,215,0);
+    font-size: 3em;
+    font-family:"GrotzecCond-Demibold";
+}
+
+.container p {
+    font-family: monospace;
     font-size: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    color: white;
+}
+
+.container ol {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    width: 75%;
 }
