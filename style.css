@@ -10,6 +10,20 @@ body {
     margin: 0;
 }
 
+.container a:link{
+    color:deepskyblue;
+}
+
+.container a:hover{
+    color: deepskyblue;
+    border-bottom: solid;
+}
+
+.container a:visited{
+    color: mediumpurple;
+    text-transform: none;
+}
+
 .container {
     width: 45%;
     text-align: left;
